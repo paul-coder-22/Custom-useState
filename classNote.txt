@@ -1,0 +1,7 @@
+expression 
+x = name.toUpperCase();
+
+-----------------------------> Whole thing is statement
+
+But the thing that is on the right side is expression like name.toUpperCase() we case use it in the JSX form..
+Like we can't use if else statement but instead of we can use ternary
