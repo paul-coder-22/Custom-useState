@@ -22,7 +22,7 @@ const useDropdwn = (label, defaultState, options) => {
         </label>
     )
 
-    return [state, DropDown, setState]
+    return [state, DropDown, setState];
 }
 
 
