@@ -1,24 +1,24 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import { Router, Link } from "@reach/router";
+
 import SearchParam from "./SearchParam";
 
+import Details from "./Details";
+
 const App = () => {
-    /*     return React.createElement("div", {}, [
-            React.createElement("h1", {}, "Adopt Me!"),
-            React.createElement(Pet, { name: "Tuna", animal: "Dog", breed: "Mixed" }),
-            React.createElement(Pet, {
-                name: "Huna",
-                animal: "Elephat",
-                breed: "Mixed",
-            }),
-            React.createElement(Pet, { name: "Cuna", animal: "Horse", breed: "Mixed" }),
-        ]); */
     return (
-        <div>
-            <h1 id="something-important">Adopt Me!</h1>
-            <SearchParam />
-        </div>
+        <React.StrictMode>
+            <div>
+                <h1 id="something-important">Adopt Me!</h1>
+                <Router>
+                    <SearchParam path="/" />
+                    <Details path="/details/:id" />
+                </Router>
+            </div>
+        </React.StrictMode>
     )
 };
 
 ReactDOM.render(<App />, document.getElementById("root"));
+// W6j.*D_uL&2ak2g
