@@ -9,7 +9,7 @@ function SearchParam() {
     const [location, setName] = useState("Seattle,WA");
     const [breeds, setBreeds] = useState([]);
     const [animal, AnimalDropDown] = useDropdown("Animal", "dog", ANIMALS);
-    const [breed, BreedDropDown, setBreed] = useDropdown("Breed", " ", breeds);
+    const [breed, BreedDropDown, setBreed] = useDropdown("Breed", "", breeds);
     const [pets, setPets] = useState([]);
 
     async function requestPets() {
